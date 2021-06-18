@@ -47,6 +47,7 @@ class App extends Component {
 
 
 render() {
+  console.log('temp')
 
   return (
     <div className="App">
