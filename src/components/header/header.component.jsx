@@ -2,13 +2,23 @@ import React from 'react';
 import './header.styles.scss';
 import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils';
+import Carticon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 
-
-const Header = ({currentUser}) => (
-    <div className = 'header-container'>
+class Header extends React.Component {
+    constructor(){
+        super();
+        this.state={
+            clicked:false
+        }
+    }
+    render(){
+        {currentUser = this.props;}
+        return(
+            <div className = 'header-container'>
         <Link className='home' exact to='/'>
-            HOME
+            SUGAR
         </Link>
         <div className = 'options'>
         {
@@ -23,10 +33,13 @@ const Header = ({currentUser}) => (
             </Link>
         }
             <div className = 'option'>
-                CART           
+               <Carticon onClick={()=>this.state.clicked = !this.state.clicked}/>         
             </div>
         </div>
+        <CartDropdown show={this.state.clicked}/>
     </div>
-)
+        )
+    }
+}
 
 export default Header;
