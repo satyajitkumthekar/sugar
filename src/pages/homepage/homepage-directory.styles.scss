@@ -1,0 +1,21 @@
+.itemcard{
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+.image {
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 0.8;
+    
+}
+
+.item {
+    cursor: pointer;
+}
