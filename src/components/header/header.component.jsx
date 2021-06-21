@@ -13,6 +13,13 @@ class Header extends React.Component {
             hidden:true
         }
     }
+
+    CartSelect = event =>{
+        event.preventDefault();
+        this.setState({hidden:!this.state.hidden});
+    }
+
+
     render(){
         
         return(
@@ -32,12 +39,12 @@ class Header extends React.Component {
                 SIGN IN
             </Link>
         }
-            <div className = 'lol' onClick={this.state.hidden = !this.state.hidden}>
-              <div  > <Carticon/></div>
+            <div className = 'lol' onClick={this.CartSelect}>
+              <div > <Carticon/></div>
                   
             </div>
         </div>
-        {this.state.hidden? null : <CartDropdown />}
+        {this.state.hidden ?null : <CartDropdown />}
     </div>
         )
     }
