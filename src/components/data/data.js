@@ -7,19 +7,19 @@ import React from 'react';
         subitems:[
          {
              id:2,
-             type:'nutella',
+             type:'NUTELLA',
              price:30,
              imageUrl: 'https://i.ibb.co/XJ53VVd/nutella-brownie.jpg'
          },
          {
             id:3,
-            type:'wallnut',
+            type:'WALLNUT',
             price:40,
             imageUrl: 'https://i.ibb.co/n077q0N/wallnut-brownie.jpg'
         },
         {
             id:4,
-            type:'chocolatechip',
+            type:'CHOCOLATECHIP',
             price:350,
             imageUrl: 'https://i.ibb.co/rvV2vwC/chocolatechip-brownie.jpg'
         }
@@ -32,21 +32,21 @@ import React from 'react';
         subitems:[
             {
                 id:6,
-                type:'white chocolate',
+                type:'WHITE CHOCOLATE',
                 price:20,
                 imageUrl: 'https://i.ibb.co/cc9r2W3/whitechocolatecookie.jpg'
 
             },
             {
                 id:7,
-                type:'double chocolate',
+                type:'DOUBE CHOCOLATE',
                 price:30,
                 imageUrl: 'https://i.ibb.co/4J2wS88/doublechocolate.jpg'
 
             },
             {
                 id:8,
-                type:'chocolate chip',
+                type:'CHOCOLATE CHIP',
                 price:25,
                 imageUrl: 'https://i.ibb.co/3mRYc6g/chocolatechipcookie.jpg'
 

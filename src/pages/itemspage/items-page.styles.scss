@@ -3,16 +3,28 @@
   
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 5%;
  margin: 0,auto;
- width:auto;
- border: 2px solid blue;
+ width:95%;
+
+}
+
+.card {
 
 
- .in {
-    width: fit-content;
-    border: 2px solid black;
+    .subitem-image {
+    }
    
 }
 
+.text-content {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 2px;
+
 }
+
+
 
