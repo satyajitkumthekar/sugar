@@ -7,6 +7,7 @@ import Homepage from './pages/homepage/homepage.component';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
+import Itemspage from './pages/itemspage/items-page.component';
 
 
 
@@ -56,6 +57,9 @@ render() {
         <Switch>
         <Route exact path='/' component={Homepage}/>
         <Route exact path='/signin' component={SignInAndSignUpPage}/>
+        <Route exact path = '/page/:pagename' component = {Itemspage}/>
+        
+        
         </Switch>
    
       </div>

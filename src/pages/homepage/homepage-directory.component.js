@@ -6,7 +6,7 @@ import {withRouter} from 'react-router-dom';
 const Itemcard = ({itemname, key, imageUrl, linkUrl, history, match} ) =>(
     <div className='itemcard'>
 
-        <div className='item' onClick={()=>history.push(`${match.url}${linkUrl}`) }>
+        <div className='item' onClick={()=>history.push(`/page/${linkUrl}`) }>
 
         <img alt='image' className='image'src={`${imageUrl}`}/>
         

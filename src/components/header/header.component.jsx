@@ -15,7 +15,7 @@ class Header extends React.Component {
     }
 
     CartSelect = event =>{
-        event.preventDefault();
+       
         this.setState({hidden:!this.state.hidden});
     }
 
