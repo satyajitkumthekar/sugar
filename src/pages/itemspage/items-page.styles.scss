@@ -2,7 +2,17 @@
 .food-item-card {
   
  display: grid;
- grid-template-columns: auto auto auto;
- border: 1px solid black;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin: 0,auto;
+ width:auto;
+ border: 2px solid blue;
+
+
+ .in {
+    width: fit-content;
+    border: 2px solid black;
+   
+}
 
 }
+

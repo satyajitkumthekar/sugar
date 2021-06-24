@@ -18,12 +18,19 @@ class Itemspage extends React.Component{
         const {type, price, imageUrl} = this.state.data
        
         return(
-            <div>  
+            <div className = 'food-item-card'>  
                 {
                     this.fooditem(this.state.data).subitems.map(
-                    (subitem)=> <div className = 'food-item-card'>
-                    <ItemDisplay imageUrl={subitem.imageUrl} type={subitem.type} price={subitem.price}/>
-                        </div>
+                    (subitem)=> 
+                    <div className='in'>
+                     <img className='subitem-image' src={`${subitem.imageUrl}`}/>
+        
+                    <div className='text-content'>
+                        <span className='type'>{subitem.type}</span>
+                        <span className='type'> {subitem.price}</span>
+                    </div>
+
+                    </div>
                     )   
                 }
             </div>          

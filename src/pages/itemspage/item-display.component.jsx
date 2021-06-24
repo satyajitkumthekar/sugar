@@ -6,7 +6,8 @@ const ItemDisplay = ({imageUrl, type, price}) => (
     <div className='item-card'>
 
         <img className='subitem-image' src={`${imageUrl}`}/>
-        <div className='text'>
+        
+        <div className='text-content'>
             <span className='type'>{type.toUpperCase()}</span>
             <span className='type'> {price}</span>
         </div>
