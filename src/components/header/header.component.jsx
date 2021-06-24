@@ -39,10 +39,10 @@ class Header extends React.Component {
                 SIGN IN
             </Link>
         }
-            <div className = 'lol' onClick={this.CartSelect}>
-              <div > <Carticon/></div>
-                  
+            <div className = 'cart-icon' onClick={this.CartSelect}>
+               <Carticon/>   
             </div>
+
         </div>
         {this.state.hidden ?null : <CartDropdown />}
     </div>
