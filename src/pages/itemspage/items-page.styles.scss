@@ -1,20 +1,8 @@
-.fooditemcard{
-    display: flex;
-    flex-direction: column;
-    
 
-    .type {
-        align-items: center;
-        align-self: center;
-        text-align: left;
-    }
+.food-item-card {
+  
+ display: grid;
+ grid-template-columns: auto auto auto;
+ border: 1px solid black;
+
 }
-
-.subitemimage {
-    background-repeat: no-repeat;
-    width: 100%;
-    aspect-ratio: 0.8;
-   
-    
-}
-

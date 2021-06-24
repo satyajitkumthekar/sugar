@@ -1,6 +1,7 @@
 import React from 'react';
 import './items-page.styles.scss';
 import DATA from '../../components/data/data';
+import ItemDisplay from './item-display.component';
 
 
 class Itemspage extends React.Component{
@@ -20,10 +21,8 @@ class Itemspage extends React.Component{
             <div>  
                 {
                     this.fooditem(this.state.data).subitems.map(
-                    (subitem)=> <div className = 'fooditemcard'>
-                    <img className='subitemimage'src={`${subitem.imageUrl}`}/>
-                    <span className='type'> {subitem.price}</span>
-                    <span className='type'>{subitem.type}</span>
+                    (subitem)=> <div className = 'food-item-card'>
+                    <ItemDisplay imageUrl={subitem.imageUrl} type={subitem.type} price={subitem.price}/>
                         </div>
                     )   
                 }
