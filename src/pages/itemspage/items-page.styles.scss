@@ -1,11 +1,12 @@
 .fooditemcard{
     display: flex;
     flex-direction: column;
+    
 
     .type {
         align-items: center;
         align-self: center;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -13,6 +14,7 @@
     background-repeat: no-repeat;
     width: 100%;
     aspect-ratio: 0.8;
+   
     
 }
 
