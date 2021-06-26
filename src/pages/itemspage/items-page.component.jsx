@@ -1,6 +1,7 @@
 import React from 'react';
 import './items-page.styles.scss';
 import DATA from '../../components/data/data';
+import CustomButton from '../../components/custom-button/custom-button.component';
 
 
 class Itemspage extends React.Component{
@@ -30,6 +31,7 @@ class Itemspage extends React.Component{
                         <span className='type'>{subitem.type}</span>
                         <span className='type'> {subitem.price}</span>
                      </div>
+                     <CustomButton inverted={true} >Add to Cart</CustomButton>
 
                     </div>
                     )   
