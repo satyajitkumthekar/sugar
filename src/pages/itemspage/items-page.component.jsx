@@ -16,12 +16,14 @@ class Itemspage extends React.Component{
 
          this.foodItem = items =>( items.find( item=> item.itemname === this.props.match.params.pagename));
 
-         this.addToCart = item => {this.setState({cart:[...this.state.cart, item]})};
+        
         
     }
 
+    addToCart = item => {this.setState({cart:[...this.state.cart, item]})};
+
     render(){
-        const {type, price, imageUrl, subitems} = this.state.data
+       
        
         return(
             <div className = 'food-item-card'>  
@@ -36,15 +38,15 @@ class Itemspage extends React.Component{
                      <div className='text-content'>
                         <span className='type'>{subitem.type}</span>
                         <span className='type'> {subitem.price}</span>
+                        
                      </div>
-                     <CustomButton inverted={true} onClick = {(subitems)=>this.addToCart(subitems)}>Add to Cart</CustomButton>
+                     <CustomButton inverted={true} onClick = {()=>this.addToCart(subitem)}>Add to Cart</CustomButton>
 
                      {
                          this.state.visible ? <CartDropdown cartitems = {this.state.cart}/> : null
                      }
                      {console.log(this.state.cart)}
-                     
-
+                    
                     </div>
                     )   
                 }
