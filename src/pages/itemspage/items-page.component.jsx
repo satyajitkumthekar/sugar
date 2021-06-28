@@ -42,14 +42,16 @@ class Itemspage extends React.Component{
                      </div>
                      <CustomButton inverted={true} onClick = {()=>this.addToCart(subitem)}>Add to Cart</CustomButton>
 
-                     {
-                         this.state.visible ? <CartDropdown cartitems = {this.state.cart}/> : null
-                     }
+                     
+                     
+                     
                      {console.log(this.state.cart)}
                     
                     </div>
-                    )   
+                    )
+                    
                 }
+                <div><CartDropdown cartitems = {this.state.cart}/></div>
             </div>          
         )
     }
