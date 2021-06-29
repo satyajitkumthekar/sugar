@@ -2,9 +2,8 @@ import React from 'react';
 import './items-page.styles.scss';
 import DATA from '../../components/data/data';
 import CustomButton from '../../components/custom-button/custom-button.component';
-import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
 import { div } from 'prelude-ls';
-
+import {CartDropdown} from '../../components/cart-dropdown/cart-dropdown.component'
 
 class Itemspage extends React.Component{
     constructor(){
@@ -16,13 +15,21 @@ class Itemspage extends React.Component{
 
          this.foodItem = items =>( items.find( item=> item.itemname === this.props.match.params.pagename));
 
-        
+         
         
     }
 
-    addToCart = item => {this.setState({cart:[...this.state.cart, item]})};
+    addToCart = subitem => {
+        <CartDropdown props={subitem}/>
+        console.log(subitem);
+    }
+
+
 
     render(){
+
+
+       
        
        
         return(
@@ -51,7 +58,6 @@ class Itemspage extends React.Component{
                     )
                     
                 }
-                <div><CartDropdown cartitems = {this.state.cart}/></div>
             </div>          
         )
     }
